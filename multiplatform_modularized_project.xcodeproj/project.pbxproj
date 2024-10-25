@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3267A3372CCC140A0054BBC0 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 3267A3362CCC140A0054BBC0 /* Packages */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3205DFAF2CCC0D9400026552 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3267A3372CCC140A0054BBC0 /* Packages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project */,
+				3267A3352CCC140A0054BBC0 /* Frameworks */,
 				3205DF9E2CCC0D9300026552 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +84,13 @@
 				3205DFB82CCC0D9400026552 /* multiplatform_modularized_projectUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3267A3352CCC140A0054BBC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +113,7 @@
 			);
 			name = multiplatform_modularized_project;
 			packageProductDependencies = (
+				3267A3362CCC140A0054BBC0 /* Packages */,
 			);
 			productName = multiplatform_modularized_project;
 			productReference = 3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project.app */;
@@ -567,6 +581,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3267A3362CCC140A0054BBC0 /* Packages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Packages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3205DF952CCC0D9200026552 /* Project object */;
 }
