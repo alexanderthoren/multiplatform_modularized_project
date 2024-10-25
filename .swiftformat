@@ -1,0 +1,41 @@
+# Wrap lines that exceed the specified maximum width.
+--maxwidth 120
+
+# Align wrapped function arguments, adding a new line before the first argument.
+# Example:
+#
+# - foo(bar: Int,
+# -     baz: String)
+#
+# + foo(
+# +   bar: Int,
+# +   baz: String
+# + )
+--wraparguments before-first
+
+# Align wrapped collection elements, adding a new line before the first element.
+# Example:
+#
+# - let foo = [bar,
+#              baz,
+# -            quuz]
+#
+# + let foo = [
+# +   bar,
+#     baz,
+# +   quuz
+# + ]
+--wrapcollections before-first
+
+# Disable the preference for comma over `&&` in `if`, `guard` or `while`
+# conditions.
+--disable andOperator
+
+# Disable all rules that could sometimes break the build in non-trivial ways.
+# To find out more on why these rules might break the build, go to
+# https://github.com/nicklockwood/SwiftFormat#known-issues
+--disable enumNamespaces,assertionFailures,redundantType,redundantInit
+
+# Disable rules that could cause Swiftlint warnings.
+--disable wrapMultilineStatementBraces
+
