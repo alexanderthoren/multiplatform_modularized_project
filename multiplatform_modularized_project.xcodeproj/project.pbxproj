@@ -7,12 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323D6D242CCC3F0100DBF699 /* multiplatform_modularized_project watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		323D6D2A2CCC3F2300DBF699 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 323D6D292CCC3F2300DBF699 /* Packages */; };
 		3267A3372CCC140A0054BBC0 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 3267A3362CCC140A0054BBC0 /* Packages */; };
 		32C4B1CF2CCC2BE3001A643E /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 32C4B1CE2CCC2BE3001A643E /* Packages */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		323D6D222CCC3F0100DBF699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3205DF952CCC0D9200026552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323D6D162CCC3EFF00DBF699;
+			remoteInfo = "multiplatform_modularized_project watchOS Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		323D6D252CCC3F0100DBF699 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				323D6D242CCC3F0100DBF699 /* multiplatform_modularized_project watchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -20,6 +47,11 @@
 		3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "multiplatform_modularized_project iOS";
+			sourceTree = "<group>";
+		};
+		323D6D182CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "multiplatform_modularized_project watchOS Watch App";
 			sourceTree = "<group>";
 		};
 		32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */ = {
@@ -35,6 +67,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3267A3372CCC140A0054BBC0 /* Packages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323D6D142CCC3EFF00DBF699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323D6D2A2CCC3F2300DBF699 /* Packages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +94,7 @@
 			children = (
 				3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
 				32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */,
+				323D6D182CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */,
 				3267A3352CCC140A0054BBC0 /* Frameworks */,
 				3205DF9E2CCC0D9300026552 /* Products */,
 			);
@@ -64,6 +105,7 @@
 			children = (
 				3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */,
 				32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */,
+				323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,10 +127,12 @@
 				3205DF992CCC0D9300026552 /* Sources */,
 				3205DF9A2CCC0D9300026552 /* Frameworks */,
 				3205DF9B2CCC0D9300026552 /* Resources */,
+				323D6D252CCC3F0100DBF699 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				323D6D232CCC3F0100DBF699 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
@@ -99,6 +143,29 @@
 			);
 			productName = multiplatform_modularized_project;
 			productReference = 3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323D6D162CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323D6D282CCC3F0100DBF699 /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project watchOS Watch App" */;
+			buildPhases = (
+				323D6D132CCC3EFF00DBF699 /* Sources */,
+				323D6D142CCC3EFF00DBF699 /* Frameworks */,
+				323D6D152CCC3EFF00DBF699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				323D6D182CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */,
+			);
+			name = "multiplatform_modularized_project watchOS Watch App";
+			packageProductDependencies = (
+				323D6D292CCC3F2300DBF699 /* Packages */,
+			);
+			productName = "multiplatform_modularized_project watchOS Watch App";
+			productReference = 323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32C4B1BE2CCC2B61001A643E /* multiplatform_modularized_project macOS */ = {
@@ -137,6 +204,9 @@
 					3205DF9C2CCC0D9300026552 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					323D6D162CCC3EFF00DBF699 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					32C4B1BE2CCC2B61001A643E = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -158,12 +228,20 @@
 			targets = (
 				3205DF9C2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
 				32C4B1BE2CCC2B61001A643E /* multiplatform_modularized_project macOS */,
+				323D6D162CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3205DF9B2CCC0D9300026552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323D6D152CCC3EFF00DBF699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,6 +265,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		323D6D132CCC3EFF00DBF699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32C4B1BB2CCC2B61001A643E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +280,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323D6D232CCC3F0100DBF699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323D6D162CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */;
+			targetProxy = 323D6D222CCC3F0100DBF699 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3205DFC02CCC0D9400026552 /* Debug */ = {
@@ -385,6 +478,65 @@
 			};
 			name = Release;
 		};
+		323D6D262CCC3F0100DBF699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Packages/Sources/Shared/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "multiplatform_modularized_project watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.multiplatform-modularized-project";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.multiplatform-modularized-project.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		323D6D272CCC3F0100DBF699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Packages/Sources/Shared/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "multiplatform_modularized_project watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.multiplatform-modularized-project";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.multiplatform-modularized-project.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		32C4B1CC2CCC2B63001A643E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +616,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		323D6D282CCC3F0100DBF699 /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project watchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323D6D262CCC3F0100DBF699 /* Debug */,
+				323D6D272CCC3F0100DBF699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		32C4B1CB2CCC2B63001A643E /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -476,6 +637,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		323D6D292CCC3F2300DBF699 /* Packages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Packages;
+		};
 		3267A3362CCC140A0054BBC0 /* Packages */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Packages;
