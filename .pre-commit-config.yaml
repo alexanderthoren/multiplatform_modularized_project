@@ -1,16 +1,16 @@
 repos:
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.12.0
+  rev: v2.14.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --indent, '2']
 - repo: https://github.com/realm/SwiftLint
-  rev: 0.54.0
+  rev: 0.57.0
   hooks:
   - id: swiftlint
     entry: swiftlint
 - repo: https://github.com/nicklockwood/SwiftFormat
-  rev: 0.53.5
+  rev: 0.54.6
   hooks:
   - id: swiftformat
     args: [--config, .swiftformat, --quiet]
