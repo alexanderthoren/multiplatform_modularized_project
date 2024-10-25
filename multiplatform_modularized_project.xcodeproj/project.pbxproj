@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		323D6D242CCC3F0100DBF699 /* multiplatform_modularized_project watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		323D6D2A2CCC3F2300DBF699 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 323D6D292CCC3F2300DBF699 /* Packages */; };
+		323D6D3E2CCC427C00DBF699 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 323D6D3D2CCC427C00DBF699 /* Packages */; };
 		3267A3372CCC140A0054BBC0 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 3267A3362CCC140A0054BBC0 /* Packages */; };
 		32C4B1CF2CCC2BE3001A643E /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 32C4B1CE2CCC2BE3001A643E /* Packages */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		323D6D2F2CCC422F00DBF699 /* multiplatform_modularized_project tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,11 @@
 		323D6D182CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "multiplatform_modularized_project watchOS Watch App";
+			sourceTree = "<group>";
+		};
+		323D6D302CCC422F00DBF699 /* multiplatform_modularized_project tvOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "multiplatform_modularized_project tvOS";
 			sourceTree = "<group>";
 		};
 		32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */ = {
@@ -78,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		323D6D2C2CCC422F00DBF699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323D6D3E2CCC427C00DBF699 /* Packages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32C4B1BC2CCC2B61001A643E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +110,7 @@
 				3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
 				32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */,
 				323D6D182CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */,
+				323D6D302CCC422F00DBF699 /* multiplatform_modularized_project tvOS */,
 				3267A3352CCC140A0054BBC0 /* Frameworks */,
 				3205DF9E2CCC0D9300026552 /* Products */,
 			);
@@ -106,6 +122,7 @@
 				3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */,
 				32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */,
 				323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */,
+				323D6D2F2CCC422F00DBF699 /* multiplatform_modularized_project tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +185,29 @@
 			productReference = 323D6D172CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		323D6D2E2CCC422F00DBF699 /* multiplatform_modularized_project tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323D6D3A2CCC423100DBF699 /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project tvOS" */;
+			buildPhases = (
+				323D6D2B2CCC422F00DBF699 /* Sources */,
+				323D6D2C2CCC422F00DBF699 /* Frameworks */,
+				323D6D2D2CCC422F00DBF699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				323D6D302CCC422F00DBF699 /* multiplatform_modularized_project tvOS */,
+			);
+			name = "multiplatform_modularized_project tvOS";
+			packageProductDependencies = (
+				323D6D3D2CCC427C00DBF699 /* Packages */,
+			);
+			productName = "multiplatform_modularized_project tvOS";
+			productReference = 323D6D2F2CCC422F00DBF699 /* multiplatform_modularized_project tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		32C4B1BE2CCC2B61001A643E /* multiplatform_modularized_project macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C4B1CB2CCC2B63001A643E /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project macOS" */;
@@ -207,6 +247,9 @@
 					323D6D162CCC3EFF00DBF699 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					323D6D2E2CCC422F00DBF699 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					32C4B1BE2CCC2B61001A643E = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -229,6 +272,7 @@
 				3205DF9C2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
 				32C4B1BE2CCC2B61001A643E /* multiplatform_modularized_project macOS */,
 				323D6D162CCC3EFF00DBF699 /* multiplatform_modularized_project watchOS Watch App */,
+				323D6D2E2CCC422F00DBF699 /* multiplatform_modularized_project tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +286,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		323D6D152CCC3EFF00DBF699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323D6D2D2CCC422F00DBF699 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +317,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		323D6D132CCC3EFF00DBF699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323D6D2B2CCC422F00DBF699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,6 +595,63 @@
 			};
 			name = Release;
 		};
+		323D6D3B2CCC423100DBF699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Packages/Sources/Shared/Preview Content\"";
+				DEVELOPMENT_TEAM = 8857VS9C9H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.multiplatform-modularized-project-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Debug;
+		};
+		323D6D3C2CCC423100DBF699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Packages/Sources/Shared/Preview Content\"";
+				DEVELOPMENT_TEAM = 8857VS9C9H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.multiplatform-modularized-project-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		32C4B1CC2CCC2B63001A643E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,6 +740,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		323D6D3A2CCC423100DBF699 /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323D6D3B2CCC423100DBF699 /* Debug */,
+				323D6D3C2CCC423100DBF699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		32C4B1CB2CCC2B63001A643E /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -638,6 +762,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		323D6D292CCC3F2300DBF699 /* Packages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Packages;
+		};
+		323D6D3D2CCC427C00DBF699 /* Packages */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Packages;
 		};
