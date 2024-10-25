@@ -8,16 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3267A3372CCC140A0054BBC0 /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 3267A3362CCC140A0054BBC0 /* Packages */; };
+		32C4B1CF2CCC2BE3001A643E /* Packages in Frameworks */ = {isa = PBXBuildFile; productRef = 32C4B1CE2CCC2BE3001A643E /* Packages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiplatform_modularized_project macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "multiplatform_modularized_project iOS";
+			sourceTree = "<group>";
+		};
+		32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "multiplatform_modularized_project macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +38,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32C4B1BC2CCC2B61001A643E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C4B1CF2CCC2BE3001A643E /* Packages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				3205DF9F2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
+				32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */,
 				3267A3352CCC140A0054BBC0 /* Frameworks */,
 				3205DF9E2CCC0D9300026552 /* Products */,
 			);
@@ -47,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */,
+				32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +101,29 @@
 			productReference = 3205DF9D2CCC0D9300026552 /* multiplatform_modularized_project iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		32C4B1BE2CCC2B61001A643E /* multiplatform_modularized_project macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32C4B1CB2CCC2B63001A643E /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project macOS" */;
+			buildPhases = (
+				32C4B1BB2CCC2B61001A643E /* Sources */,
+				32C4B1BC2CCC2B61001A643E /* Frameworks */,
+				32C4B1BD2CCC2B61001A643E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				32C4B1C02CCC2B61001A643E /* multiplatform_modularized_project macOS */,
+			);
+			name = "multiplatform_modularized_project macOS";
+			packageProductDependencies = (
+				32C4B1CE2CCC2BE3001A643E /* Packages */,
+			);
+			productName = "multiplatform_modularized_project macOS";
+			productReference = 32C4B1BF2CCC2B61001A643E /* multiplatform_modularized_project macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +135,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					3205DF9C2CCC0D9300026552 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					32C4B1BE2CCC2B61001A643E = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -114,6 +157,7 @@
 			projectRoot = "";
 			targets = (
 				3205DF9C2CCC0D9300026552 /* multiplatform_modularized_project iOS */,
+				32C4B1BE2CCC2B61001A643E /* multiplatform_modularized_project macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -126,10 +170,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32C4B1BD2CCC2B61001A643E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3205DF992CCC0D9300026552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32C4B1BB2CCC2B61001A643E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,6 +385,64 @@
 			};
 			name = Release;
 		};
+		32C4B1CC2CCC2B63001A643E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "multiplatform_modularized_project macOS/entitlements.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Packages/Sources/Shared/Preview Content\"";
+				DEVELOPMENT_TEAM = 8857VS9C9H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..multiplatform-modularized-project-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		32C4B1CD2CCC2B63001A643E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "multiplatform_modularized_project macOS/entitlements.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Packages/Sources/Shared/Preview Content\"";
+				DEVELOPMENT_TEAM = 8857VS9C9H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..multiplatform-modularized-project-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,10 +464,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		32C4B1CB2CCC2B63001A643E /* Build configuration list for PBXNativeTarget "multiplatform_modularized_project macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32C4B1CC2CCC2B63001A643E /* Debug */,
+				32C4B1CD2CCC2B63001A643E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		3267A3362CCC140A0054BBC0 /* Packages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Packages;
+		};
+		32C4B1CE2CCC2BE3001A643E /* Packages */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Packages;
 		};
